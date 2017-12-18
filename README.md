@@ -11,4 +11,4 @@ rspec --init
 ### Also see
 
  - [rspec](https://github.com/rspec/rspec)
- - [【初心者向け】テスト駆動開発とRspecについて調べてみた](【初心者向け】テスト駆動開発とRspecについて調べてみた)
+ - [使えるRSpec入門・その1「RSpecの基本的な構文や便利な機能を理解する」](https://qiita.com/jnchito/items/42193d066bd61c740612)
