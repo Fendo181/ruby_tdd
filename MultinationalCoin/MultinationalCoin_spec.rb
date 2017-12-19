@@ -1,4 +1,4 @@
-describe 'MoneyTest' do
-  it 'Dollerに$5が入る。' do
+describe '' do
+  it '' do
   end
 end
