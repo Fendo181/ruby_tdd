@@ -7,26 +7,16 @@ def fibonacci_calc(n)
   elsif (n <= 2)
     return 1
   else
-    return 1+1
+    return fibonacci_calc(n-1) + fibonacci_calc(n-2)
   end
 end
 
 describe 'Fibonacci' do
-  arr = [[0,0],[1,1],[2,1],[3,2]]
+  fibonacci_numbers = [[0,0],[1,1],[2,1],[3,2]]
 
-  it 'nが0' do
-    expect(arr[0][1]).to eq (fibonacci_calc(arr[0][0]))
-  end
-
-  it 'nが1' do
-    expect(arr[1][1]).to eq (fibonacci_calc(arr[1][0]))
-  end
-
-  it 'nが2' do
-    expect(arr[2][1]).to eq (fibonacci_calc(arr[2][0]))
-  end
-
-  it 'nが3' do
-    expect(arr[3][1]).to eq (fibonacci_calc(arr[3][0]))
+  fibonacci_numbers.size.times do |i|
+    it '.fibonacci_calc' do
+      expect(fibonacci_numbers[i][1]).to eq (fibonacci_calc(fibonacci_numbers[i][0]))
+    end
   end
 end
