@@ -1,5 +1,4 @@
 require "spec_helper"
-# require File.expand_path('../tdd_ruby')+"/Fibonacci"
 
 def fibonacci_calc(n)
   if (n==0)
@@ -12,11 +11,11 @@ def fibonacci_calc(n)
 end
 
 describe 'Fibonacci' do
-  fibonacci_numbers = [[0,0],[1,1],[2,1],[3,2]]
+  fib = [0, 1, 1, 2, 3, 5, 8, 13]
 
-  fibonacci_numbers.size.times do |i|
+  fib.each.with_index do |i, index|
     it '.fibonacci_calc' do
-      expect(fibonacci_numbers[i][1]).to eq (fibonacci_calc(fibonacci_numbers[i][0]))
+      expect(i).to eq (fibonacci_calc(index))
     end
   end
 end
