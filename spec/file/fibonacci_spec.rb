@@ -7,7 +7,7 @@ def fibonacci_calc(n)
   elsif (n <= 2)
     return 1
   else
-    return 2
+    return 1+1
   end
 end
 
