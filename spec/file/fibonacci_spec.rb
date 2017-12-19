@@ -1,8 +1,12 @@
 require "spec_helper"
 # require File.expand_path('../tdd_ruby')+"/Fibonacci"
 
-def fibonacci_calc(num)
-  return 0
+def fibonacci_calc(n)
+  if (n==0)
+    return 0
+  else
+    return 1
+  end
 end
 
 describe 'Fibonacci' do
