@@ -17,7 +17,7 @@ describe 'User' do
 
   it '.sayHi' do
     endo = User.new("endo")
-    expect(endo.name).to eq("endo")
+    expect(endo.sayHi).to eq("Hi! i am endo")
   end
 end
 

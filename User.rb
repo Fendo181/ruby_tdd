@@ -4,9 +4,6 @@ class User
     @name =name
   end
   def sayHi
-    puts "Hi! i am #{@name}"
+    "Hi! i am #{@name}"
   end
 end
-
-endo = User.new("endo")
-puts endo.name
