@@ -1,5 +1,5 @@
 require "spec_helper"
-require File.dirname(__FILE__) + "/User"
+require File.expand_path('../tdd_ruby')+"/User"
 
 
 describe 'User' do
